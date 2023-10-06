@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department Survey Form</title>
+</head>
+<body>
+    <h1>CS Department Survey Form</h1>
+    <form id="surveyForm">
+        <!-- First Name -->
+        <label for="firstName">First Name*</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name*</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <!-- Street Address -->
+        <label for="streetAddress">Street Address*</label>
+        <input type="text" id="streetAddress" name="streetAddress" required><br><br>
+
+        <!-- City -->
+        <label for="city">City*</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <!-- State -->
+        <label for="state">State*</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <!-- Zip Code -->
+        <label for="zip">Zip Code*</label>
+        <input type="text" id="zip" name="zip" required><br><br>
+
+        <!-- Telephone Number -->
+        <label for="telephone">Telephone Number*</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Date of Survey -->
+        <label for="surveyDate">Date of Survey*</label>
+        <input type="date" id="surveyDate" name="surveyDate" required><br><br>
+        <!-- What did you like most about the campus-->
+        <label>What did you Like most about the campus</label><br><br>
+        <label>
+            <input type="checkbox" name="students" value="students"> Students
+        </label><br>
+        <label>
+            <input type="checkbox" name="location" value="location"> Location
+        </label><br>
+        <label>
+            <input type="checkbox" name="Campus" value="Campus"> Campus
+        </label><br>
+        <label>
+            <input type="checkbox" name="Atmosphere" value="Atmosphere"> Atmosphere
+        </label><br>
+        <label>
+            <input type="checkbox" name="dorm rooms" value="dorm rooms"> dorm rooms
+        </label><br>
+        <label>
+            <input type="checkbox" name="sports" value="sports"> sports
+        </label><br><br>
+        <!-- How did you get interested in the University-->
+        <label>How did you get interested in the University</label><br><br>
+        <label>
+            <input type="radio" name="friends" value="friends"> Friends
+        </label><br>
+        <label>
+            <input type="radio" name="Television" value="Television"> Television
+        </label><br>
+        <label>
+            <input type="radio" name="Internet" value="Internet"> Internet
+        </label><br>
+        <label>
+            <input type="radio" name="Other" value="Other"> Other
+        </label><br><br>
+        <!-- Likelihood of Him/Her Recommending-->
+        <label>Likelihood of Him/Her Recommending this school</label><br><br>
+        <select id="likelihood" name="likelihood">
+        <option value="Very Likely"> Very Likely</option>
+        <option value="Likely">Likely</option>
+        <option value="UnLikely"> Unlikely</option>
+        </select><br><br>
+        <!-- Raffle-->
+        <label>Raffle(Enter at least ten comma-separated numbers ranging from 1 through 100)</label><br><br>
+        <input type="text" id="raffle" name="raffle" pattern="([1-9]|[1-9][0-9]|100)(,[1-9]|[1-9][0-9]|100){9,}" required placeholder="Enter numbers separated by commas" style="width: 400px;"><br><br>
+
+        <!-- ADDitional Comments-->
+        <label>Additional Comments</label>
+        <textarea name="comments"></textarea><br><br>
+        <input type="Submit" value="Submit">
+        <input type="Reset" value="Cancel">
+    </form>
+</body>
+</html>
